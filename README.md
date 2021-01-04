@@ -1,3 +1,16 @@
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
 # All Word Embeddings from One Embedding
 ---
 Embeddings are super important for neural networks as they do not understand categorial variables but only continuous ones. The way embedding matrices are constructed, in the traditional fashion, they scale somewhat linearly with the size of the input space which can get very memory heavy. Giving the size of the input space, $V$, and the embedding dimension, $D_e$, the conventional way does the one hot encoding as shown in the left figure below. The right figure represents the method **ALONE** (**al**l word embeddings from **one**) that will be introduced in this blog.
